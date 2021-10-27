@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+
+
+\usepackage[french]{babel}
+\usepackage{charter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\newcounter{numquestion}
+\setcounter{numquestion}{0}
+
+\newcounter{numsubquestion}
+\setcounter{numsubquestion}{1}
+
+
+
+% Definition  des commandes 
+\newcommand{\question}{\stepcounter{numquestion}\textbf{\noindent\newline\thenumquestion - }\setcounter{numsubquestion}{1}}
+\newcommand{\subquestion}{\newline\indent\textbf{\alph{numsubquestion} - }\stepcounter{numsubquestion}}
+
+
+\author{Prénom NOM Classe}
+\title{Devoir Libre n°$x$}
+\date{Date}
+
+\begin{document}
+\maketitle
+
+
+\end{document}
